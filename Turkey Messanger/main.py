@@ -1,6 +1,6 @@
 from twilio.rest import Client
-cellphone = "+18452871086"
-twilio_number= "+15302876888"
+cellphone = ""
+twilio_number= ""
 import random
 from tkinter import *
 from tkinter import Radiobutton
@@ -94,8 +94,8 @@ def send_message(value):
     if value == 7:
         quote = cusmessage.get()
     cellphone = phoneentry.get()        
-    account="ACebb1380b1545678431197785ab68b44b"
-    token="ee561c7ba060153db38010fcab9c96e1"
+    account=""
+    token=""
     client = Client(account,token)
     client.messages.create(to="+1"+cellphone,
                            from_=twilio_number,
